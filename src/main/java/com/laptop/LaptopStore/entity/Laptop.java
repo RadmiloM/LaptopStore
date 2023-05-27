@@ -9,15 +9,15 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.time.LocalDateTime;
 
-@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 public class Laptop {
 
     @Id
     @GeneratedValue
-    private Long id;
+    private Integer id;
     private String name;
     private String processor;
     private String screen;
